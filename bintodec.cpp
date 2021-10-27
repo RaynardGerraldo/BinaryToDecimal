@@ -2,7 +2,6 @@
 #include <vector>
 #include <numeric>
 #include <cmath>
-#include <gmp.h>
 #include <boost/multiprecision/gmp.hpp>  
 
 boost::multiprecision::mpz_int bintodec(std::string input)
@@ -21,6 +20,7 @@ boost::multiprecision::mpz_int bintodec(std::string input)
 
 int main(){
     std::string input;
+    std::cout << "Enter binary: " << "\n";
     std::cin >> input;
 
     std::cout << bintodec(input) << "\n";
